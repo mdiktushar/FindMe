@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ECF6A8">
+    <item
+        android:background="#ECF6A8"
+        android:title="Search"
+        app:showAsAction="always"
+        android:id="@+id/searchID"
+        />
+    <item
+        android:background="#ECF6A8"
+        android:title="Update Profile"
+        android:id="@+id/updateDataMenuItem"
+        />
+    <item
+        android:background="#ECF6A8"
+        android:title="Upload Photo"
+        android:id="@+id/photoItem"
+        />
+    <item
+        android:background="#ECF6A8"
+        android:title="Change Password"
+        android:id="@+id/changePasswordID"
+        />
+    <item
+        android:background="#ECF6A8"
+        android:title="Sign Out"
+        android:id="@+id/signOunMenuItem"
+        />
+</menu>
