@@ -112,11 +112,11 @@ public class ProfileActivity extends AppCompatActivity {
         }else if(item.getItemId()==R.id.updateDataMenuItem){
             Intent intent = new Intent(getApplicationContext(),UpdateProfileData.class);
             startActivity(intent);
-        }else if(item.getItemId()==R.id.changePasswordID){
-            Intent intent = new Intent(getApplicationContext(),ChangePassword.class);
+        }else if(item.getItemId()==R.id.userSettingsID){
+            Intent intent = new Intent(getApplicationContext(),UserSeatting.class);
             startActivity(intent);
         }else if(item.getItemId()==R.id.photoItem){
-            Intent intent = new Intent(getApplicationContext(),UploadPhoto.class);
+            Intent intent = new Intent(getApplicationContext(),PhotoSetting.class);
             startActivity(intent);
         }else if(item.getItemId()==R.id.searchID){
             try {

@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FindResult"></activity>
+        <activity android:name=".UploadCoverPhoto"></activity>
+        <activity android:name=".PhotoSetting" />
+        <activity android:name=".UpdateEmail" />
+        <activity android:name=".UserSeatting" />
+        <activity android:name=".FindResult" />
         <activity android:name=".FindPeople" />
         <activity android:name=".UploadPhoto" />
         <activity android:name=".ChangePassword" />

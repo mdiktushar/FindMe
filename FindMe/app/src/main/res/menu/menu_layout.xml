@@ -20,8 +20,8 @@
         />
     <item
         android:background="#ECF6A8"
-        android:title="Change Password"
-        android:id="@+id/changePasswordID"
+        android:title="User Settings"
+        android:id="@+id/userSettingsID"
         />
     <item
         android:background="#ECF6A8"
