@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#ECF6A8">
-    <item
-        android:background="#ECF6A8"
-        android:title="Search"
-        app:showAsAction="always"
-        android:id="@+id/searchID"
-        />
+    android:background="#ECF6A8"
+    >
     <item
         android:background="#ECF6A8"
         android:title="Update Profile"
@@ -20,8 +14,8 @@
         />
     <item
         android:background="#ECF6A8"
-        android:title="User Settings"
-        android:id="@+id/userSettingsID"
+        android:title="Change Password"
+        android:id="@+id/changePasswordID"
         />
     <item
         android:background="#ECF6A8"

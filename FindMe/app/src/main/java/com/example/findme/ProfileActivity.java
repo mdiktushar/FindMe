@@ -31,7 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
     private FirebaseStorage firebaseStorage;
 
     private ImageView profilePhoto;
-    private TextView proName, proEmail, proDescription, proExperience, proPhone, proDateOfBirth, proGender, proAddress, proSchool, proCollage, proUniversity, proSkills;
+    private TextView proName, proEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,17 +42,6 @@ public class ProfileActivity extends AppCompatActivity {
 
         proEmail = findViewById(R.id.proEmailID);
         proName = findViewById(R.id.proNameID);
-        proDescription = findViewById(R.id.profileDescriptionID);
-        proExperience = findViewById(R.id.proExperienceID);
-        proPhone = findViewById(R.id.proPhoneID);
-        proDateOfBirth = findViewById(R.id.proDateOfBirthID);
-        proGender = findViewById(R.id.proGenderID);
-        proAddress = findViewById(R.id.proAddressID);
-        proSchool = findViewById(R.id.proSchoolID);
-        proCollage = findViewById(R.id.proCollageID);
-        proUniversity = findViewById(R.id.proUniversityID);
-        proSkills = findViewById(R.id.proSkillID);
-
         profilePhoto = findViewById(R.id.viewProfilePhotoID);
 
         mAuth = FirebaseAuth.getInstance();
@@ -75,16 +64,6 @@ public class ProfileActivity extends AppCompatActivity {
                 UserProfile userProfile = dataSnapshot.getValue(UserProfile.class);
                 proName.setText(userProfile.userName);
                 proEmail.setText(userProfile.userEmail);
-                proDescription.setText(userProfile.description);
-                proExperience.setText(userProfile.experience);
-                proPhone.setText(userProfile.phone);
-                proDateOfBirth.setText(userProfile.dateOfBirth);
-                proGender.setText(userProfile.gender);
-                proAddress.setText(userProfile.address);
-                proSchool.setText(userProfile.school);
-                proCollage.setText(userProfile.collage);
-                proUniversity.setText(userProfile.university);
-                proSkills.setText(userProfile.skills);
             }
 
             @Override
@@ -112,20 +91,12 @@ public class ProfileActivity extends AppCompatActivity {
         }else if(item.getItemId()==R.id.updateDataMenuItem){
             Intent intent = new Intent(getApplicationContext(),UpdateProfileData.class);
             startActivity(intent);
-        }else if(item.getItemId()==R.id.userSettingsID){
-            Intent intent = new Intent(getApplicationContext(),UserSeatting.class);
+        }else if(item.getItemId()==R.id.changePasswordID){
+            Intent intent = new Intent(getApplicationContext(),ChangePassword.class);
             startActivity(intent);
         }else if(item.getItemId()==R.id.photoItem){
-            Intent intent = new Intent(getApplicationContext(),PhotoSetting.class);
+            Intent intent = new Intent(getApplicationContext(),UploadPhoto.class);
             startActivity(intent);
-        }else if(item.getItemId()==R.id.searchID){
-            try {
-                Intent intent = new Intent(getApplicationContext(),FindPeople.class);
-                startActivity(intent);
-            }catch (Exception e){
-
-            }
-
         }
 
         return super.onOptionsItemSelected(item);
