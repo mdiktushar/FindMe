@@ -239,6 +239,16 @@
                 android:text="             "
                 android:textSize="50dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:text="\@FindMe"
+                android:layout_marginBottom="20dp"
+                android:textColor="#49472C"
+                />
+
         </LinearLayout>
     </ScrollView>
 

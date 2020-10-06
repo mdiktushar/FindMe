@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.findme">
-    
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/application"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UploadPhoto"></activity>
+        <activity android:name=".Search"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".UploadCoverPhoto" />
+        <activity android:name=".PhotoSetting" />
+        <activity android:name=".UpdateEmail" />
+        <activity android:name=".UserSeatting" />
+        <activity android:name=".FindResult" />
+        <activity android:name=".FindPeople" />
+        <activity android:name=".UploadPhoto" />
         <activity android:name=".ChangePassword" />
         <activity android:name=".UpdateProfileData" />
         <activity

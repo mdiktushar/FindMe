@@ -21,7 +21,6 @@ public class ChangePassword extends AppCompatActivity implements View.OnClickLis
 
     private Button changePassword;
     private EditText newPasswordOne, newPasswordTwo;
-    private TextView goBack;
     String password,password2;
 
     private FirebaseUser firebaseUser;
@@ -34,13 +33,11 @@ public class ChangePassword extends AppCompatActivity implements View.OnClickLis
         changePassword = findViewById(R.id.changePasswordID);
         newPasswordOne = findViewById(R.id.newPasswordID1);
         newPasswordTwo = findViewById(R.id.newPasswordID2);
-        goBack = findViewById(R.id.goBackID);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        goBack.setOnClickListener(this);
         changePassword.setOnClickListener(this);
     }
 
@@ -49,9 +46,6 @@ public class ChangePassword extends AppCompatActivity implements View.OnClickLis
         switch (v.getId()){
             case R.id.changePasswordID:
                 checkPassword();
-                break;
-            case R.id.goBackID:
-                goBackToProfile();
                 break;
         }
     }

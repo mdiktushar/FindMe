@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#ECF6A8"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ECF6A8">
     <item
         android:background="#ECF6A8"
-        android:title="Update Profile"
+        android:title="Search"
+        android:id="@+id/searchID"
+        />
+    <item
+        android:title="View Users"
+        app:showAsAction="always"
+        android:id="@+id/viewUsersID"
+        />
+    <item
+        android:background="#ECF6A8"
+        android:title="Edit Profile"
         android:id="@+id/updateDataMenuItem"
         />
     <item
         android:background="#ECF6A8"
-        android:title="Upload Photo"
+        android:title="Photo Settings"
         android:id="@+id/photoItem"
         />
     <item
         android:background="#ECF6A8"
-        android:title="Change Password"
-        android:id="@+id/changePasswordID"
+        android:title="User Settings"
+        android:id="@+id/userSettingsID"
+        />
+    <item
+        android:background="#ECF6A8"
+        android:title="About"
+        android:id="@+id/aboutID"
         />
     <item
         android:background="#ECF6A8"

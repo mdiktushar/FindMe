@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Find Me</string>
+    <string name="about1">
+        App Information:
+    </string>
+    <string name="about2">
+        FindMe
+    </string>
+    <string name="about3">
+        This is an Android Project. Using Firebase Database.
+        A social media application. using this we can find a person who have create an account on this application.
+        This is a platform where people can upload there online CV.
+    </string>
+    <string name="about4">
+        Developer: Md. Imrul Kayes
+    </string>
+    <string name="about5">
+        ID: 1106022
+    </string>
+    <string name="about6">
+        Email: md.tushar1804@gmail.com
+    </string>
+    <string name="about7">
+        University: Bangladesh Army International University of Science and Technology (BAIUST).
+    </string>
+    <string name="about8">Version: 1.00.00</string>
+    <string name="about9">Thank you..</string>
+
 </resources>

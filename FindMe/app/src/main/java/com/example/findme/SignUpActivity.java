@@ -39,7 +39,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     private RadioButton radioButton;
 
     String name, email, password, password2, gender = null, dateOfBirth = null;
-
+    String description = " ", experience = " ", phone = " ", address = " ", school = " ", collage = " ", university = " ", skills = " ";
+    String imageUri = "https://firebasestorage.googleapis.com/v0/b/find-me-d1c5a.appspot.com/o/16363.png?alt=media&token=763c3e44-55a7-4092-84fd-bba058f58d71";
     private FirebaseAuth mAuth;
 
     @Override
@@ -99,7 +100,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                         viewDate.setText(dayOfMonth+"/"+(month+1)+"/"+year);
-                        dateOfBirth = viewDate.toString();
+                        dateOfBirth = dayOfMonth+"/"+(month+1)+"/"+year;
                     }
                 },year,month,day);
 
@@ -213,7 +214,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference(mAuth.getUid());
 
-        UserProfile userProfile = new UserProfile(email, name, dateOfBirth, gender);
+        UserProfile userProfile = new UserProfile(email, name, dateOfBirth, gender, description, experience, phone, address, school, collage, university, skills, imageUri);
         databaseReference.setValue(userProfile);
     }
 }
